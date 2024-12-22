@@ -9,7 +9,6 @@ Se debe permitir solo 3 intentos, si acierta dentro de los 3 intentos debe termi
 Al final del programa si no acertó se debe desplegar un mensaje de que lo intente nuevamente.
 Si dice si, se debe permitir repetir el programa.
 ******/
-//Made by ñeñitez
 
 int main(){
 
@@ -19,7 +18,7 @@ int main(){
     do{
 
         do{
-            printf("\nDear user, please enter Methuselah's age, remember you only have 3 attempts..\n");
+            printf("\nDear user, please enter Methuselah's age, remember you only have 3 attempts:");
             scanf("%d", &respuesta);
             if(respuesta<0){
                 printf("\nPlease, enter a number in a valid range\n");
@@ -28,14 +27,19 @@ int main(){
 
         intentos=0;
         if(respuesta==969){
-            printf("\nCongrats!! You won. 969 is the correct answer1");
+            printf("\nCongrats!! You won. 969 is the correct answer");
         }else{
             intentos=0;
             do{
                 printf("Incorect! Try again..\n");
+                if(respuesta<969) {
+			        printf("\nThe Methuselah's age is higher\n");
+		        } else {
+			        printf("\nThe Methuselah's age is lower\n");
+		        }
                 scanf("%d", &respuesta);
                 intentos++;
-            }while(respuesta!=969);
+            }while(respuesta!=969 && intentos!=3);
             if(intentos<=3){
                 printf("\nCongrats man!! Your answer is ok :}\n");
             }else{
@@ -43,11 +47,13 @@ int main(){
             }
          }
 
+         
          do{
             printf("\nDo you want to play again? Y/N\n");
             scanf(" %c", &opci);/*por favor, recuerden que después de una lectura de int, al momento de pasar a char
             se debe de dar un espacio a la máscara de la variable en scanf. cuestiones técnicas jaja*/
         }while(opci!='N' && opci!='n'  && opci!='y' && opci!='Y');
+       
 
     }while(opci=='y' || opci=='Y');
         
