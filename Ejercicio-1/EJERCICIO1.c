@@ -50,9 +50,6 @@ int main(){
             }
          }
 
-        }while(opci!='N' && opci!='n'  && opci!='y' && opci!='Y');
-       
-
     }while(opci=='y' || opci=='Y');
         
     return 0;
