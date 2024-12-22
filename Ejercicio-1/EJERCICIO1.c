@@ -43,14 +43,13 @@ int main(){
                 printf("\nCongrats!! You won. 969 is the correct answer\n");
             }else{
                 printf("Sorry, you lose because you did not answer in 3 attemps :c\n");
+		do {
+			printf("\nDo you want to play again? Y/N\n");
+			scanf(" %c", &opci);
+		} while(opci!='N' && opci!='n'  && opci!='y' && opci!='Y');
             }
          }
 
-         
-         do{
-            printf("\nDo you want to play again? Y/N\n");
-            scanf(" %c", &opci);/*por favor, recuerden que después de una lectura de int, al momento de pasar a char
-            se debe de dar un espacio a la máscara de la variable en scanf. cuestiones técnicas jaja*/
         }while(opci!='N' && opci!='n'  && opci!='y' && opci!='Y');
        
 
