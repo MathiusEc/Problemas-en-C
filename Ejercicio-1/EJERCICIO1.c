@@ -27,6 +27,7 @@ int main(){
 
         if(respuesta==969){
             printf("\nCongrats!! You won. 969 is the correct answer");
+	    opci=('N' && 'n');
         }else{
             intentos=1;
             do{
@@ -41,6 +42,7 @@ int main(){
             }while(respuesta!=969 && intentos!=3);
             if(respuesta==969){
                 printf("\nCongrats!! You won. 969 is the correct answer\n");
+		opci=('N' && 'n');    
             }else{
                 printf("Sorry, you lose because you did not answer in 3 attemps :c\n");
 		do {
