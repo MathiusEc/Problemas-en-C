@@ -1,5 +1,8 @@
 # Indicaciones
 
+### IMPORTANTE COMENTARIOS EJERCICIO 1
+- Falta la parte donde si el usuario no ingresa el numero correcto indique si la edad de matusalen es mayor o menor a ese numero, falta que solo se permitan los 3 intentos tal como dice las indicaciones del ejercicio.
+
 ### IMPORTANTE!!
 - Nicolás necesito que mínimo pero ya de ULTIMO debes de tener la sección 5 hecha
     - como mínimo, lo mejor sería que ya estés en la sección 8
