@@ -18,18 +18,17 @@ int main(){
     do{
 
         do{
-            printf("\nDear user, please enter Methuselah's age, remember you only have 3 attempts:");
+            printf("\nDear user, please enter Methuselah's age, remember you only have 3 attempts:\n");
             scanf("%d", &respuesta);
             if(respuesta<0){
                 printf("\nPlease, enter a number in a valid range\n");
             }
         }while(respuesta<0);
 
-        intentos=0;
         if(respuesta==969){
             printf("\nCongrats!! You won. 969 is the correct answer");
         }else{
-            intentos=0;
+            intentos=1;
             do{
                 printf("Incorect! Try again..\n");
                 if(respuesta<969) {
@@ -40,10 +39,10 @@ int main(){
                 scanf("%d", &respuesta);
                 intentos++;
             }while(respuesta!=969 && intentos!=3);
-            if(intentos<=3){
-                printf("\nCongrats man!! Your answer is ok :}\n");
+            if(respuesta==969){
+                printf("\nCongrats!! You won. 969 is the correct answer\n");
             }else{
-                printf("Sorry, you lose because you did not answer in 3 attemps or less.. :c\n");
+                printf("Sorry, you lose because you did not answer in 3 attemps :c\n");
             }
          }
 
