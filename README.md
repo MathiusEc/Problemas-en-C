@@ -1,8 +1,5 @@
 # Indicaciones
 
-### IMPORTANTE COMENTARIOS EJERCICIO 1
-- Falta la parte donde si el usuario no ingresa el numero correcto indique si la edad de matusalen es mayor o menor a ese numero, falta que solo se permitan los 3 intentos tal como dice las indicaciones del ejercicio.
-- 
 ### 1
 Realizar un programa en C que permita acertar la edad de Matusalen(969) el programa debe indicar si es la respuesta correcta, caso contrario indicar si es menor o mayor. Se debe permitir solo 3 intentos, si acierta dentro de los 3 intentos debe terminar el programa. Al final del programa si no acertó se debe desplegar un mensaje de que lo intente nuevamente, Si dice si, se debe permitir repetir el programa.
 
@@ -24,12 +21,3 @@ Pide al usuario que ingrese una número. Escribe un programa que determine si es
 Ejemplo:
 Entrada: "12321"
 Salida: "Es un palíndromo".
-
-Realizar para cada ejercicio 3 pruebas de escritorio en Excel. 
-
-Subir un zip con los códigos fuentes y las pruebas.
-:D
-
-
-# Importante
-Hacer cada uno sus ramas
